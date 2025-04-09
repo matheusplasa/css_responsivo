@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RazrDot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">RD</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="interactive-background"></div>
+            <div class="hero-content">
+                <h1>Aprenda a Programar e Transforme seu Futuro</h1>
+                <p>Cursos completos e práticos para você se tornar um desenvolvedor de sucesso.</p>
+                <a href="#cursos" class="button">Ver Cursos</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="container">
+            <div class="sobre-imagem">
+                <img src="placeholder-loja.jpg" alt="Imagem da Loja">
+            </div>
+            <div class="sobre-texto">
+                <h2>Sobre a Nossa Escola</h2>
+                <p>Bem-vindo à RazrDot! Somos apaixonados por tecnologia e acreditamos que a programação é uma habilidade fundamental no mundo de hoje. Nossa missão é oferecer cursos de alta qualidade, com conteúdo relevante e professores experientes, para que você possa alcançar seus objetivos na área da programação.</p>
+                <p>Nossa abordagem de ensino é prática e focada no desenvolvimento de projetos reais. Acreditamos que aprender fazendo é a melhor forma de fixar o conhecimento e construir um portfólio sólido. Junte-se à nossa comunidade de aprendizado e comece sua jornada no mundo da programação!</p>
+            </div>
+        </section>
+
+        <section id="cursos" class="container">
+            <h2>Nossos Cursos em Destaque</h2>
+            <div class="cursos-lista">
+                <div class="curso-box">
+                    <img src="placeholder-curso1.jpg" alt="Curso 1">
+                    <h3>Curso de Python para Iniciantes</h3>
+                    <p>Aprenda os fundamentos da linguagem Python e comece a construir seus primeiros projetos.</p>
+                    <div class="preco-promocao">
+                        <span class="preco-antigo">R$ 499,99</span>
+                        <span class="preco-novo">R$ 299,99</span>
+                        <div class="promocao-destaque"></div>
+                    </div>
+                    <button class="button carrinho-button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="curso-box">
+                    <img src="placeholder-curso2.jpg" alt="Curso 2">
+                    <h3>Desenvolvimento Web Completo</h3>
+                    <p>Domine HTML, CSS e JavaScript e crie websites interativos e responsivos.</p>
+                    <div class="preco-promocao">
+                        <span class="preco-antigo">R$ 799,99</span>
+                        <span class="preco-novo">R$ 599,99</span>
+                        <div class="promocao-destaque"></div>
+                    </div>
+                    <button class="button carrinho-button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="curso-box">
+                    <img src="placeholder-curso3.jpg" alt="Curso 3">
+                    <h3>Lógica de Programação Essencial</h3>
+                    <p>Desenvolva o raciocínio lógico e as bases para qualquer linguagem de programação.</p>
+                    <div class="preco-promocao">
+                        <span class="preco-antigo">R$ 299,99</span>
+                        <span class="preco-novo">R$ 199,99</span>
+                        <div class="promocao-destaque"></div>
+                    </div>
+                    <button class="button carrinho-button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="curso-box">
+                    <img src="placeholder-curso4.jpg" alt="Curso 4">
+                    <h3>React para Desenvolvedores Front-End</h3>
+                    <p>Aprenda a construir interfaces de usuário dinâmicas com a biblioteca React.</p>
+                    <div class="preco-promocao">
+                        <span class="preco-antigo">R$ 999,99</span>
+                        <span class="preco-novo">R$ 799,99</span>
+                        <div class="promocao-destaque"></div>
+                    </div>
+                    <button class="button carrinho-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida? Entre em contato conosco!</p>
+            <form>
+                <input type="text" placeholder="Seu Nome">
+                <input type="email" placeholder="Seu Email">
+                <textarea placeholder="Sua Mensagem"></textarea>
+                <button type="submit" class="button">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Curso de Programação - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            const background = document.querySelector('.interactive-background');
+            background.style.backgroundPositionY = `${window.scrollY * 0.3}px`;
+        });
+    </script>
+</body>
+</html>

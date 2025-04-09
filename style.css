@@ -1,0 +1,356 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do Header */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #5cb85c;
+}
+
+/* Estilos da Seção Hero */
+/* Estilos da Seção Hero */
+#hero {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 80px; /* Para não sobrepor o header */
+    background-image: url('https://www.techlise.com.br/blog/wp-content/uploads/2022/02/Screenshot_3-1.png'); /* Adicione o caminho da sua imagem */
+    background-size: contain; /* Para cobrir todo o espaço da seção */
+    background-position: center; /* Para centralizar a imagem */
+}
+
+.interactive-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adicionando uma camada preta semi-transparente para opacidade */
+    z-index: -1; /* Coloca o background interativo atrás da imagem de fundo */
+}
+
+@keyframes moveLines {
+    from { background-position-y: 0; }
+    to { background-position-y: 20px; }
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    position: relative; /* Garante que o conteúdo fique acima do background */
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: #4cae4c;
+}
+
+/* Estilos da Seção Sobre Nós */
+#sobre {
+    display: flex;
+    gap: 40px;
+    padding: 60px 20px;
+    align-items: center;
+    background-color: #222; /* Cor de fundo */
+    border-radius: 8px; /* Opcional */
+    margin: 20px auto; /* Centraliza a box horizontalmente */
+    max-width: 1200px; /* Defina uma largura máxima para a box (ajuste conforme necessário) */
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center; /* Opcional: centraliza o título dentro do bloco de texto */
+}
+
+.sobre-texto p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify; /* Opcional: justifica o texto dentro do bloco de texto */
+}
+/* Estilos da Seção de Cursos */
+#cursos {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+#cursos h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.cursos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.curso-box {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.curso-box img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.curso-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.curso-box p {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.preco-promocao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.1em;
+}
+
+.preco-novo {
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+
+.carrinho-button {
+    width: 100%;
+}
+
+/* Estilos da Seção de Contato */
+#contato {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+#contato h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#contato p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#contato form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+}
+
+#contato textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contato button[type="submit"] {
+    padding: 15px 30px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato button[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Layout Tablet (de 641px até 1023px) */
+@media (max-width: 1023px) {
+    .container {
+        padding: 15px;
+    }
+
+    #sobre {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cursos-lista {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* Layout Mobile (até 640px) */
+@media (max-width: 640px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #hero {
+        height: auto;
+        padding: 80px 20px 40px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .cursos-lista {
+        grid-template-columns: 1fr;
+    }
+
+    #contato form {
+        padding: 10px;
+    }
+}
