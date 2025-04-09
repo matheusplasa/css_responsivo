@@ -67,7 +67,7 @@ nav a:hover {
     text-align: center;
     overflow: hidden;
     padding-top: 80px; /* Para não sobrepor o header */
-    background-image: url('https://www.techlise.com.br/blog/wp-content/uploads/2022/02/Screenshot_3-1.png'); /* Adicione o caminho da sua imagem */
+    background-image: url(''); /* Adicione o caminho da sua imagem */
     background-size: contain; /* Para cobrir todo o espaço da seção */
     background-position: center; /* Para centralizar a imagem */
 }
